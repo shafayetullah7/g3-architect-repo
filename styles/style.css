@@ -296,9 +296,6 @@
     font-size: 2rem;
     color:var(--dark-3);
 }
-.next-right::before{
-    display: none;
-}
 .next-bottom{
     display: none;
 }
@@ -627,6 +624,9 @@ footer .copyright{
         right: 0;
     }
     .next-right{
+        display: none;
+    }
+    .next-right::before{
         display: none;
     }
     .next-bottom{
