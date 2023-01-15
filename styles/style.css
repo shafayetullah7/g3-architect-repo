@@ -1,0 +1,135 @@
+/* work sans font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* common */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --color-1:#FF900E;
+    --dark-1:#131313;
+    --dark-2:#424242;
+    --dark-3:#727272;
+}
+
+/* ====================Header Start==================== */
+.header{
+    padding: 2.8rem 12rem;
+    background-color: #fff4e7;
+}
+/* ----------Nav Start---------- */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: var(--dark-1);
+    font-weight:700;
+    font-size: 2.2rem;
+}
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 3rem;
+}
+.menu li a{
+    text-decoration: none;
+    color: var(--dark-2);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 6rem;
+    gap: 2rem;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.banner-description{
+    font-size: 1rem;
+    color: var(--dark-3);
+    width: 65%;
+}
+.explore-btn{
+    background-color: var(--color-1);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+}
+.banner img{
+    max-width: 100%;
+}
+/* ----------Nav End---------- */
+/* ====================Header End==================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================Small Device============================== */
+@media only screen and (max-width:576px) {
+
+    /* ====================Header Start==================== */
+    .header{
+        padding: 1rem 1rem;
+        background-color: #fff4e7;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    .logo{
+        color: var(--dark-1);
+        font-weight:700;
+        font-size: 1.5rem;
+    }
+    .menu li{
+        display: block;
+        width: fit-content;
+        margin:0 auto;
+        padding: 5px;
+    }
+    .banner{
+        margin-top: 3.2rem;
+        gap: 1rem;
+    }
+    .banner-title{
+        font-size: 2.2rem;
+        font-weight: 900;
+    }
+    .banner-description{
+        font-size: 1rem;
+        color: var(--dark-3);
+        width: 100%;
+    }
+    .explore-btn{
+        background-color: var(--color-1);
+        color: white;
+        border: none;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 1rem 1.5rem;
+    }
+    /* ====================Header End==================== */
+}
