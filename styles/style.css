@@ -83,10 +83,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* gap: 4rem; */
 }
 .team-images{
-    /* width: 152rem; */
     width: 52%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -96,11 +94,9 @@
     max-width: 100%;
 }
 .feature-content{
-    /* width: 100rem; */
     width: 38%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 1.7rem;
 }
 .feature-content .title{
@@ -136,7 +132,7 @@
 
     /* ====================Header Start==================== */
     .header{
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
         background-color: #fff4e7;
     }
     .nav{
@@ -169,4 +165,41 @@
         width: 100%;
     }
     /* ====================Header End==================== */
+
+
+    /* ====================Main Start==================== */
+    /* ----------Feature Start---------- */
+    .feature{
+        margin: 6rem 1rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .team-images{
+        width: 100%;
+        gap: 0.8rem 0.8rem;
+    }
+    .feature-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    .feature-content .title{
+        font-size: 1.5rem;
+    }
+    .feature-content .title span:nth-child(1){
+        color: var(--dark-3);
+        font-weight: 500;
+    }
+    .feature-content .title span:nth-child(3){
+        color: var(--color-1);
+    }
+    .feature-content .text{
+        color: var(--dark-3);
+        font-size: 0.9rem;
+    }
+    /* ----------Feature End---------- */
+    /* ====================Main End==================== */
 }
