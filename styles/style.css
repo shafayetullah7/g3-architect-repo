@@ -203,12 +203,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 13rem;
+    width: 12rem;
     padding: 2.5rem 0;
+    transition: 0.3s;
 }
-.achievement img{
-    width: 2.2rem;
-}
+.achievement:hover{transform: scale(1.1);}
+.achievement img{width: 2.2rem;}
+
 .achievement h2{
     color: var(--dark-2);
     font-size: 2.3rem;
@@ -232,7 +233,7 @@
     margin: 0 auto;
 }
 .sponsors .text{
-
+    text-align: center;
     width: 50%;
     margin: 1.5rem auto 0;
 }
@@ -242,7 +243,7 @@
     justify-content: space-between;
 }
 .sponsors-flexbox div{
-    width: 9rem;
+    width: 8rem;
 }
 .sponsors-flexbox img{
     width: 100%;
@@ -251,6 +252,19 @@
 /* ====================Main End==================== */
 
 
+/* ====================Footer Start==================== */
+footer{
+    margin: 8rem 12rem;
+    background-color: #FFF4E7;
+    border-radius: 5px;
+}
+footer .copyright{
+    text-align: center;
+    color: var(--dark-2);
+    font-size: 1rem;
+    padding: 2rem 0;
+}
+/* ====================Footer End==================== */
 
 
 
@@ -304,14 +318,31 @@
     /* ====================Main Start==================== */
     /* ----------Feature Start---------- */
     .feature{
-        margin: 6rem 1rem 0;
+        margin: 9rem 1rem 0;
         flex-direction: column;
         gap: 2rem;
+        background-color: #f3f3f3;
+        padding: 0.5rem;
+        border-radius: 5px;
     }
+
+
+    /* **********************************************************I THINK THIS LOOK BETTER********************************************************** */
     .team-images{
         width: 100%;
         gap: 0.8rem 0.8rem;
     }
+    /* **********************************************************I THINK THIS LOOK BETTER********************************************************** */
+
+    /* **********************************************************Alternative********************************************************** */
+    /* .team-images{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        
+    } */
+    /* **********************************************************Alternative********************************************************** */
+
+
     .feature-content{
         width: 100%;
         display: flex;
@@ -337,61 +368,147 @@
     /* ----------Feature End---------- */
 
     /* ----------Top Features Start---------- */
-.top-features{
-    margin: 5rem 1rem 0;
-}
+    .top-features{
+        margin: 5rem 1rem 0;
+    }
 
-.top-features-flexbox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-between; */
-}
-.feature-list{width: 100%;}
+    .top-features-flexbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    .feature-list{width: 100%;}
 
-.feature-list .headline{
-    font-size: 1.5rem;
-    padding: 0 1.2rem;
-    border-right: 0.5rem solid var(--color-1);
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-}
-.feature-list .text{
-    margin: 1rem auto 0;
-    text-align: center;
-    width: 85%;
-}
-.feature-list ul{margin-top: 1rem;}
+    .feature-list .headline{
+        font-size: 1.5rem;
+        padding: 0 1.2rem;
+        border-right: 0.5rem solid var(--color-1);
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .feature-list .text{
+        margin: 1rem auto 0;
+        text-align: center;
+        width: 85%;
+    }
+    .feature-list ul{margin-top: 1rem;}
 
-.feature-list ul li{
-    margin-bottom: 0.5rem;
-    padding: 1.2rem 0.8rem;
-    box-shadow: 0 0 20px 1px #e2e2e2;
-}
+    .feature-list ul li{
+        margin-bottom: 0.5rem;
+        padding: 1.2rem 0.8rem;
+        box-shadow: 0 0 20px 1px #e2e2e2;
+    }
 
-.feature-list ul li h3{font-size: 98%;}
-.feature-list ul li .text{
-    margin: 0;
-    text-align: left;
-    width: 100%;
-}
-.architect{
-    width: 100%;
-    position: relative;
-}
-.experience{
-    padding: 2rem 2.5rem;
-    bottom: -3rem;
-    left: 10%;
-}
-.experience h1{
-    font-size: 2rem;
-    font-weight: 700;
-}
-.experience p{
-    font-size: 1rem;
-}
-/* ----------Top Features End---------- */
+    .feature-list ul li h3{font-size: 1.2rem;}
+    .feature-list ul li .text{
+        margin: 5px 0;
+        text-align: left;
+        width: 100%;
+    }
+    .architect{
+        width: 100%;
+        position: relative;
+    }
+    .experience{
+        padding: 2rem 2.5rem;
+        bottom: -3rem;
+        left: 10%;
+    }
+    .experience h1{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .experience p{
+        font-size: 1rem;
+    }
+    /* ----------Top Features End---------- */
+
+
+    /* ----------Some Facts Start---------- */
+    .some-facts{
+        margin: 7rem 1rem 0;
+        background-color: #fafafa;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    .some-facts .title{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .some-facts .text{
+        width: 100%;
+        margin-top: 7px;
+    }
+    .achievements-flexbox{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+    .achievement{
+        border: 1px solid var(--color-1);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 12rem;
+        padding: 2.5rem 0;
+        transition: 0.3s;
+    }
+    .achievement:hover{transform: scale(1.1);}
+    .achievement img{width: 2.2rem;}
+
+    .achievement h2{
+        color: var(--dark-2);
+        font-size: 2.3rem;
+        margin-top: 5px;
+        font-weight: 600;
+    }
+    .achievement p{
+        color: var(--dark-3);
+        font-weight: 700;
+        padding-top: 5px;
+    }
+    /* ----------Some Facts End---------- */
+
+    /* ----------Sponsors Start---------- */
+    .sponsors{
+        margin: 5rem 1rem 0;
+        
+    }
+
+    .sponsors .text{
+        width: 100%;
+        margin: 1rem auto 0;
+    }
+    .sponsors-flexbox{
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 2rem;
+    }
+    .sponsors-flexbox div{width: 6rem;}
+
+    /* ----------Sponsors End---------- */
     /* ====================Main End==================== */
+
+    /* ====================Footer Start==================== */
+    footer{
+        margin: 8rem 1rem;
+        background-color: #FFF4E7;
+        border-radius: 5px;
+    }
+    footer .copyright{
+        text-align: center;
+        color: var(--dark-2);
+        font-size: 1rem;
+        padding: 2rem 1rem;
+    }
+    /* ====================Footer End==================== */
 }
