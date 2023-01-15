@@ -292,8 +292,12 @@
     right: 0;
 }
 .next-right{
+    display: block;
     font-size: 2rem;
     color:var(--dark-3);
+}
+.next-right::before{
+    display: none;
 }
 .next-bottom{
     display: none;
