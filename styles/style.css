@@ -79,7 +79,7 @@
 /* ====================Main Start==================== */
 /* ----------Feature Start---------- */
 .feature{
-    margin: 4rem 12rem;
+    margin: 4rem 12rem 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -114,6 +114,72 @@
     font-size: 0.9rem;
 }
 /* ----------Feature End---------- */
+
+/* ----------Top Features Start---------- */
+.top-features{
+    margin: 6rem 12rem 0;
+}
+
+.top-features-flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+.feature-list{width: 42%;}
+
+.feature-list .headline{
+    font-size: 2.3rem;
+    padding: 0 1.2rem;
+    border-left: 0.5rem solid var(--color-1);
+}
+.feature-list .text{
+    margin-top: 1.2rem;
+    color: var(--dark-3);
+    font-size: 0.8rem;
+}
+.feature-list ul{
+    margin-top: 2rem;
+    list-style-type: none;
+}
+.feature-list ul li{
+    margin-bottom: 1rem;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 0 20px 1px #e2e2e2;
+    border-radius: 7px;
+    height: 9rem;
+    overflow: hidden;
+}
+
+.feature-list ul li h3{font-size: 98%;}
+.feature-list ul li .text{margin-top: 1rem;}
+.architect{
+    width: 46%;
+    position: relative;
+}
+.architect img{
+    max-width: 100%;
+    z-index: 0;
+}
+
+.experience{
+    background-color: var(--color-1);
+    width: fit-content;
+    color: white;
+    text-align: center;
+    padding: 2.3rem 2.8rem;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    left: -5rem;
+    z-index: 1;
+}
+.experience h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.experience p{
+    font-size: 1.5rem;
+}
+/* ----------Top Features End---------- */
 /* ====================Main End==================== */
 
 
