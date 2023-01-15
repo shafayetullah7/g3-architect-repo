@@ -623,8 +623,6 @@ footer .copyright{
         right: 0;
     }
     .next-right{
-        font-size: 2rem;
-        color:var(--dark-3);
         display: none;
     }
     .next-bottom{
